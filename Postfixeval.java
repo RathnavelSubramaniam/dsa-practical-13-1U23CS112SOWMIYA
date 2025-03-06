@@ -20,7 +20,6 @@ class stack
         {
             top++;
             item[top] = ele;
-          //  System.out.println("Inserted Element:"+ele);
         }
     }
     public int pop() 
@@ -33,7 +32,6 @@ class stack
         {
             int x = item[top];
             top--;
-          //  System.out.println("Popped Element:"+x);
             return (x);
         }
     }
@@ -92,12 +90,9 @@ class evalpostfix
             st.push(po[i]-'0');
             else
             {
-              //  st.display();
                 a = st.pop();
                 b = st.pop();
-            //  
 System.out.println("a:"+a);
-              //  System.out.println("b:"+b);
                if((a!=-1)&&(b!=-1))
                {
                 switch (po[i])
@@ -132,8 +127,7 @@ System.out.println("a:"+a);
        else return -1;
     }
 }        
-public class Postfixeval
-{
+public class Postfixeval{
     public static void main(String[] args) 
     {
         Scanner sc= new Scanner(System.in);

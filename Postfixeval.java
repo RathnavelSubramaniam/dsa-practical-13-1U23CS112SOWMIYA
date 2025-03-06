@@ -91,129 +91,46 @@ class evalpostfix
             if(isOperand(po[i]))
             st.push(po[i]-'0');
             else
-
-
             {
-
-
               //  st.display();
-
-
                 a = st.pop();
-
-
                 b = st.pop();
-
-
             //  
 System.out.println("a:"+a);
-
-
               //  System.out.println("b:"+b);
-
-
                if((a!=-1)&&(b!=-1))
-
-
                {
-
-
                 switch (po[i])
-
-
                 {
-
-
                     case '+':
-
-
                         st.push(a + b);
-
-
                         break;
-
-
                     case '-':
-
-
                         st.push(b - a);
-
-
                         break;
-
-
                     case '*':
-
-
                         st.push(a * b);
-
-
                         break;
-
-
                     case '/':
-
-
                         st.push(b / a);
-
-
                         break;
-
-
                     case '%':
-
-
                         st.push(b % a);
-
-
                         break;
-
-
                     default:
-
-
                     break;
-
-
-                }
-
-
-               
-
-
+                }           
             }
-
-
           else
-
-
           return -1;
-
-
             }
-
-
             i++;
-
-
         }
-
-
        int res_val=st.pop();
-
-
        if(st.isEmpty())
-
-
        return res_val;
-
-
        else return -1;
-
-
     }
-
-
 }        
 public class Postfixeval 
 {
